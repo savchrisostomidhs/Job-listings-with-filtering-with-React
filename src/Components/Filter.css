@@ -1,0 +1,98 @@
+.filter-section {
+    background: hsl(180, 29%, 50%) url(/bg-header-desktop.svg);
+    display: flex;
+    flex: 0 0 156px;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.filter {
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 6px;
+    box-shadow: 0px 10px 20px 0px hsla(180, 8%, 52%, 0.4);
+    display: flex;
+    gap: 10px;
+    height: fit-content;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: absolute;
+    top: 76%;
+    width: 80%;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 15px;
+    height: 100%;
+}
+
+.filter-category {
+    background-color: hsla(180, 29%, 50%, 0.2);
+    border-radius: 4px;
+    color: hsl(180, 29%, 50%);
+    display: flex;
+    font-weight: 600;
+    user-select: none;
+    width: fit-content;
+}
+
+.filter-category p {
+    height: 100%;
+    padding: 8px;
+}
+
+.close-button {
+    align-items: center;
+    background-color: hsl(180, 29%, 50%);
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 4px 8px;
+    width: fit-content;
+}
+
+.close-button:hover {
+    background-color: hsl(180, 14%, 20%);
+}
+
+.clear {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+
+.clear-button {
+    color: hsl(180, 8%, 52%);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.clear-button:hover {
+    color: hsl(180, 29%, 50%);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+@media (max-width: 1200px) {
+    .filter {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .filter {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .filter {
+        width: 90%;
+    }
+}

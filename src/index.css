@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+#root {
+    height: fit-content;
+    min-height: 100vh;
+    width: 100%;
+}
+
+body {
+    font-family: "League Spartan", sans-serif;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,157 @@
+.job {
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 6px;
+    box-shadow: 0px 10px 20px 0px hsla(180, 8%, 52%, 0.4);
+    display: flex;
+    height: 140px;
+    justify-content: space-between;
+    padding: 10px 40px;
+    width: 80%;
+}
+
+.left,
+.info,
+.name,
+.time {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    gap: 20px;
+}
+
+.name,
+.time {
+    gap: 10px;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.left img {
+    height: 100%;
+}
+
+.info {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+}
+
+.company {
+    color: hsl(180, 29%, 50%);
+    font-weight: 600;
+}
+
+.new,
+.featured {
+    align-items: center;
+    background-color: hsl(180, 29%, 50%);
+    border-radius: 50px;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 600;
+    justify-content: center;
+    padding: 6px 8px 4px;
+    text-transform: uppercase;
+}
+
+.featured {
+    background-color: hsl(180, 14%, 20%);
+}
+
+.job-title {
+    color: hsl(180, 14%, 20%);
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    user-select: none;
+}
+
+.job-title:hover {
+    color: hsl(180, 29%, 50%);
+}
+
+.time {
+    color: hsl(180, 8%, 52%);
+    list-style-position: inside;
+}
+
+li {
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.posted-at {
+    list-style-type: none;
+}
+
+.categories {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.category {
+    align-items: center;
+    background-color: hsla(180, 29%, 50%, 0.2);
+    border-radius: 4px;
+    color: hsl(180, 29%, 50%);
+    cursor: pointer;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    padding: 10px;
+    user-select: none;
+}
+
+.category:hover {
+    background-color: hsl(180, 29%, 50%);
+    color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 1200px) {
+    .job {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .job {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+        height: fit-content;
+        padding: 20px;
+        position: relative;
+        width: 80%;
+    }
+
+    .left {
+        border-bottom: 1px solid hsl(180, 8%, 52%);
+        padding: 20px 0;
+    }
+
+    .left img {
+        bottom: 90%;
+        height: 20%;
+        position: absolute;
+    }
+
+    .categories {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 500px) {
+    .job {
+        width: 90%;
+    }
+}
